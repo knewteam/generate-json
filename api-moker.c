@@ -6,7 +6,7 @@ Link to frozen library: https://github.com/cesanta/frozen
 
 int main()
 {
-    FILE *fp = fopen("carData.json", "w");
+    FILE *fp = fopen("api.json", "w");
     struct json_out out = JSON_OUT_FILE(fp);
     json_printf(&out, "{\n");
     json_printf(&out, "\t%Q : %d,\n", "total_mileage", 400);
@@ -15,6 +15,6 @@ int main()
     json_printf(&out, "\t\t%Q : %.1f,\n", "mileage", 25.3);
     json_printf(&out, "\t\t%Q : %.1f\n", "consuption", 13.3);
     json_printf(&out, "\t}\n");
-    json_printf(&out, "}");
+    json_printf(&out, "}\n");
     return 0;
 }
