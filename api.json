@@ -1,8 +1,0 @@
-{
-	"total_mileage" : 400,
-	"is_parked" : true,
-	"last_trio" : {
-		"mileage" : 25.3,
-		"consuption" : 13.3
-	}
-}
